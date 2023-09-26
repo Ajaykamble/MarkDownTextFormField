@@ -35,19 +35,19 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final CustomTextEditingController _editTextController = CustomTextEditingController({
     r"@.\w+": const TextStyle(
-      color: Colors.blue,
+      color: Colors.blue,//For mentions
     ),
     r"#.\w+": const TextStyle(
-      color: Colors.blue,
+      color: Colors.blue,//for hashtags
     ),
     r'_(.*?)\_': const TextStyle(
-      fontStyle: FontStyle.italic,
+      fontStyle: FontStyle.italic,//italic text
     ),
     '~(.*?)~': const TextStyle(
-      decoration: TextDecoration.lineThrough,
+      decoration: TextDecoration.lineThrough,//strikethrough text
     ),
     r'\*(.*?)\*': const TextStyle(
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.bold,//bold text
     ),
   });
   
